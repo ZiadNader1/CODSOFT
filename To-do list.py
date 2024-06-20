@@ -72,6 +72,7 @@ class Task:
 
         elif x == 5:
             print("Thanks for using my simple to-do list program!")
+            rasie SystemExit
         
         elif x<=0 or x>5:
             print("please choose a number for your option between 1-5")
@@ -79,8 +80,7 @@ class Task:
     def main_menu(self):
         while True:
             choice = self.main_menu_choice()
-            if choice == 5:
-                break
+            
             self.decision_making(choice)
 #called the main function
 task1 = Task("ziad")
